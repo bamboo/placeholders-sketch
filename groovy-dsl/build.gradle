@@ -1,0 +1,11 @@
+plugins {
+    id("my.plugin")
+}
+
+my {
+    placeholders = [a: 'b', c: 'd']
+    placeholders.e = 'f'
+    placeholders['g'] = 'h'
+// Can be achieved via custom method OR Groovy decoration
+//    placeholders i: 'j', k: 'l'
+}
